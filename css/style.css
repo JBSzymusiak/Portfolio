@@ -1640,7 +1640,7 @@ figure.dotted-bg:before {
 }
 
 #about-section .container {
-  background: #bd87b5;
+  background: #efefef;
   padding-top: 50px;
   padding-bottom: 50px;
   padding-left: 50px;
@@ -2403,50 +2403,6 @@ figure.dotted-bg:before {
   --about-gray-3: #a7a7a7;
 }
 
-
-#about-section .container {
-  position: relative;
-  overflow: hidden;
-  padding: 150px;
-  /* Docelowy kolorowy gradient jest stale pod spodem */
-  background: linear-gradient(135deg, #f1eff1 0%, #f1eff1 50%, #ece7eb 100%);
-}
-
-/* Szara „maskująca” warstwa na wierzchu */
-#about-section .container::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  /* Szary gradient przykrywa kolor – będzie wygaszany */
-  background: linear-gradient(135deg, #bdbdbd 0%, #c9c9c9 50%, #a7a7a7 100%);
-  opacity: 1;
-  /* start: pełna szarość */
-  transition: opacity 500ms ease;
-  /* płynne przenikanie */
-  pointer-events: none;
-}
-
-/* Po wejściu sekcji w viewport — schowaj maskę */
-#about-section.colored .container::before {
-  opacity: 0;
-}
-
-/* (opcjonalnie) subtelna tekstura, zostaje w tle */
-#about-section .container::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-image: url("images/noise.png");
-  opacity: 0.06;
-  pointer-events: none;
-}
-
-/* Szanuj preferencje dostępności */
-@media (prefers-reduced-motion: reduce) {
-  #about-section .container::before {
-    transition: none;
-  }
-}
 
 .edge-figure-fixed {
   position: fixed;
