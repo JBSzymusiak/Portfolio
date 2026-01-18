@@ -1344,8 +1344,8 @@ figure.dotted-bg:before {
   border-radius: 50%;
   border: 0.3rem solid rgba(255, 255, 255, 0.3);
   border-top-color: #ffffff;
-  -webkit-animation: 1.5s spin infinite linear;
-  animation: 1.5s spin infinite linear;
+  -webkit-animation: 1s spin infinite linear;
+  animation: 1s spin infinite linear;
 }
 
 .loader-portfolio.dark,
@@ -1457,7 +1457,7 @@ figure.dotted-bg:before {
   top: 50px;
 }
 
-.detail-v1 .detail-label {
+icon-service .detail-v1 .detail-label {
   display: block;
   font-size: 11px;
   font-weight: 900;
@@ -1529,7 +1529,7 @@ figure.dotted-bg:before {
   border-radius: 50%;
   width: 35px;
   height: 35px;
-  background: rgba(3, 137, 255, 0.2);
+  background: rgba(235, 152, 238, 0.87);
   bottom: -0px;
   right: -0px;
   z-index: -1;
@@ -2364,7 +2364,7 @@ figure.dotted-bg:before {
 
 .portfolio-item img {
   filter: grayscale(100%);
-  transition: filter 2s ease, transform 2s ease;
+  transition: filter 1s ease, transform 1s ease;
 }
 
 /* Kolor po najechaniu */
@@ -2378,7 +2378,7 @@ figure.dotted-bg:before {
 .portfolio-item .overlay {
   opacity: 0;
   visibility: hidden;
-  transition: opacity 2s ease;
+  transition: opacity 1s ease;
 }
 
 /* Overlay widoczny na hover */
